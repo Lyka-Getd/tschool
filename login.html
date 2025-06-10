@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Taguig City University</title>
+    <link rel="icon" type="image/png" href="tcu.png">
+  <link rel="stylesheet" href="loginstyle.css"> 
+</head> 
+<body> 
+  <section> 
+    <div class="signin"> 
+      <div class="content"> 
+        <img src="tcu.png" alt="Sign In Icon" style="width: 100px; height: 100px;">
+        <h2>Taguig City University</h2> 
+        <div class="form"> 
+          <div class="inputBox"> 
+            <input type="text" id="username" required> 
+            <i>Username</i> 
+          </div> 
+          <div class="inputBox"> 
+            <input type="password" id="password" required> 
+            <i>Password</i> 
+          </div> 
+          <div class="inputBox"> 
+            <input type="submit" value="Login" onclick="validateLogin()"> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </section> 
+
+  <script>
+    function validateLogin() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      
+      const correctUsername = 'user'; 
+      const correctPassword = 'pass'; 
+      
+      if (username === correctUsername && password === correctPassword) {
+        window.location.href = 'C:/Users/Marivic Montano/Desktop/School/home.html'; 
+      } else {
+        alert('Incorrect username or password');
+      }
+    }
+  </script>
+</body>
+</html>
